@@ -1,0 +1,12 @@
+[0m[[0m[33mwarn[0m] [0m[0mFlag -deprecation set repeatedly[0m
+[0m[[0m[33mwarn[0m] [0m[0mFlag -unchecked set repeatedly[0m
+[0m[[0m[33mwarn[0m] [0m[0mFlag -encoding set repeatedly[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/brianheathcote/developemnt/obst/block-and-signals-gds-store/it/test/uk/gov/hmrc/blockandsignalsgdsstore/repositories/EventDocumentRepositoryISpec.scala:28:39 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m28 |[0m[33mimport[0m java.time.temporal.{ChronoUnit, TemporalUnit}[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                       ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                       unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E198] Unused Symbol Warning: /Users/brianheathcote/developemnt/obst/block-and-signals-gds-store/it/test/uk/gov/hmrc/blockandsignalsgdsstore/repositories/EventDocumentRepositoryISpec.scala:30:63 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m30 |[0m[33mimport[0m scala.concurrent.duration.{DurationInt, FiniteDuration, MILLISECONDS}[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m                                                               ^^^^^^^^^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m                                                           unused import[0m
+[0m[[0m[33mwarn[0m] [0m[0m5 warnings found[0m

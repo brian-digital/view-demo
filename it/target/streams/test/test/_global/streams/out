@@ -1,0 +1,114 @@
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.controllers.VersionedSearchControllerISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mVersionedSearchControllerISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST v2/search/results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return search results for accountIntervention: for accountIntervention search only InitiatingEntity-analyst will return[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return search results for the the other events[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when there is no user agent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when the user agent is not allowed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /search/count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return count correctly: for accountIntervention only InitiatingEntity-analyst will count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return count correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when there is no user agent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when the user agent is not allowed[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.controllers.LargeResultsSearchControllerISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLargeResultsSearchControllerISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /search/results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return a large result ok[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.controllers.SearchControllerISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mSearchControllerISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /search/results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return search results for accountIntervention: for accountIntervention search only InitiatingEntity-analyst will return[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return search results for the the other events[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when there is no user agent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when the user agent is not allowed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /search/count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return count correctly: for accountIntervention only InitiatingEntity-analyst will count[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return count correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when there is no user agent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return 403 when the user agent is not allowed[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.filters.GzipFilterIntegrationISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mGzipFilterIntegrationISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /search/results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return gzipped response of the inserted events if 'Accept-Encoding' header was specified[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should return non-gzipped response of the inserted events if 'Accept-Encoding' header was not specified[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.controllers.EventControllerISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEventControllerISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /:version/event[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return 400 Bad Request[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the :version is not supported[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return 403[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when there is no user agent[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the user agent is not allowed[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /v1/event[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return 201 Created[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when an account-concern event is received[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when an account-intervention event is received[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when a credential-compromise event is received[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return 400 Bad Request[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when a payload with an unknown intervention code is received[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when a payload with an unknown event type is received[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when an invalid payload is received[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when none of the timestamps fields are present - account concern[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /v2/event[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return 201 Created[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the event is a Credential Concern[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the event is a Device Concern[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return 400 Bad Request[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the request is invalid[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.repositories.EventDocumentRepositoryISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEventDocumentRepositoryISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mEventDocumentRepository mongo repository[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should configure TTL correctly[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should ensure only EventDocument with unique eventId value can be added[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should insert an EventDocument only[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should insert and search[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when eventType is AccountIntervention, initiatingEntity is Analyst[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when eventType AccountIntervention, initiatingEntity is not Analyst[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when eventType is AccountConcern, with dateFrom and dateTo fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when eventType is AccountIntervention, with dateFrom and dateTo fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when eventType is AccountIntervention, with dateFrom, dateTo and single subjectId fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  should return correct search results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the filters are dateFrom, dateTo and multiple subjectId fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the filters are dateFrom, dateTo and single credId fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the filters are dateFrom, dateTo and multiple credId fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when insert documents to collection and search AccountIntervention with dateFrom, dateTo, credId, subjectId, and eventType fields[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the filters are credentialType, reasonAdmin, reasonUser, emailAddress, interventionCode and eventType AccountConcernDetails[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m  - when the filters are multiple credentialType, reasonAdmin, reasonUser, emailAddress, interventionCode and eventType AccountConcernDetails[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.controllers.LargeResultsVersionedSearchResultsISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mLargeResultsVersionedSearchResultsISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /v2/search/results[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should return a large result ok *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  204 was not equal to 200 (LargeResultsVersionedSearchResultsISpec.scala:107)[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.test.TestEventGeneratorServiceISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTestEventGeneratorServiceISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTestEventGeneratorService[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Generate Test events and save them to Mongo when randomly generate credIds[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should Generate Test events and save them to Mongo when not randomly generate credIds[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(uk.gov.hmrc.blockandsignalsgdsstore.test.TestEventControllerISpec, org.scalatest.tools.Framework$$anon$1@25ec609c, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mTestEventControllerISpec:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mPOST /test-only/event[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create test events when randomlyGenerate is true - default[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create test events when randomlyGenerate is false[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDELETE /test-only/event[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete all records when some exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should delete no records when none exist[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mDELETE /test-only/clearDB[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set ttl on all records to near future[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should handle no records in db[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 12 seconds, 958 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 55[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 9, aborted 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 54, failed 1, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.controllers.VersionedSearchControllerISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.controllers.LargeResultsSearchControllerISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.controllers.SearchControllerISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.filters.GzipFilterIntegrationISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.controllers.EventControllerISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.repositories.EventDocumentRepositoryISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.test.TestEventGeneratorServiceISpec[0m
+[0m[[0m[0mdebug[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.test.TestEventControllerISpec[0m
+[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
+[0m[[0m[31merror[0m] [0m[0m	uk.gov.hmrc.blockandsignalsgdsstore.controllers.LargeResultsVersionedSearchResultsISpec[0m
+[0m[[0m[31merror[0m] [0m[0m(it / Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

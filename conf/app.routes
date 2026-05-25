@@ -1,0 +1,8 @@
+# microservice specific routes
+
+POST        /:version/event             uk.gov.hmrc.blockandsignalsgdsstore.controllers.EventController.storeEvent(version)
+POST        /search/results             uk.gov.hmrc.blockandsignalsgdsstore.controllers.SearchController.search()
+POST        /search/count               uk.gov.hmrc.blockandsignalsgdsstore.controllers.SearchController.count()
+
+POST        /:version/search/results    uk.gov.hmrc.blockandsignalsgdsstore.controllers.VersionedSearchController.search(version)
+POST        /:version/search/count      uk.gov.hmrc.blockandsignalsgdsstore.controllers.VersionedSearchController.count(version)

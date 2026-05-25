@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/view-demo/view-demo.iml" filepath="$PROJECT_DIR$/.idea/modules/view-demo/view-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/view-demo/it/view-demo.it.iml" filepath="$PROJECT_DIR$/.idea/modules/view-demo/it/view-demo.it.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/view-demo/view-demo.view-demo-build.iml" filepath="$PROJECT_DIR$/.idea/modules/view-demo/view-demo.view-demo-build.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="view-demo" target="11" />
+      <module name="view-demo.it" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="view-demo" options="-Xlint -encoding UTF-8 -encoding utf8 -g" />
+      <module name="view-demo.it" options="-Xlint -encoding UTF-8 -encoding utf8 -g" />
+    </option>
+  </component>
+</project>
